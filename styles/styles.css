@@ -1,0 +1,15 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nav-link{
+    font-weight: bold;
+}
+
+.main-info{
+    margin-top: 96px;
+    background-color: #f8f9fb;
+}
+.main-info p{
+    color:#787878;
+}
