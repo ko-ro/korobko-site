@@ -14,55 +14,93 @@
     <link rel="stylesheet" href="fonts/fonts.css">
   </head>
   <body>
-    
+    <!--Header navigation bar-->
     <header>
-        <div class="container fixed-top">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-
-                <a class="navbar-brand" href="#">
+        <div class="container fixed-top bg-1">
+            <nav class="navbar navbar-expand-lg navbar-light bg-1 ">
+                <!--Logo-->
+                <a class="navbar-brand" href="#yak-main-info">
                     <img src="images/logo.png" height="70" class="d-inline-block text-left" alt="">
                 </a>
-                
+                <!--Menu on XS-->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
+                <!--Menu list items-->
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <ul class="navbar-nav ml-auto justify-content-end col-12">
-                        <li class="nav-item active">
-                            <a class="nav-link nav-link-style" href="#yak-aboutme">Про мене </a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#yak-main-info">Головна </a>
                         </li>
-                        <li class="nav-item nav-link-style">
-                            <a class="nav-link nav-link-style" href="#yak-ps-photo">Професійні навички</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#yak-about-me">Про мене </a>
                         </li>
-                        <li class="nav-item ">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#yak-ps-photo">Професійні навички</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="#yak-scientific-work">Наукова Робот</a>
                         </li>
-                        <li class="nav-item ">
+                        <li class="nav-item">
                             <a class="nav-link" href="#yak-project">Проекти</a>
                         </li>
-                        <li class="nav-item ">
+                        <li class="nav-item">
                             <a class="nav-link" href="#yak-contact">Контакти</a>
                         </li>
                     </ul>
 
                 </div>
-
             </nav>
         </div>
     </header>
 
-    <section class="container main-info">
-        <div class="row">
+    <!--Header inf-->
+    <section class="container mt-96erm main-info bg-1" id="yak-main-info">
+        <div class="row mh-100">
+
+            <!--Container with images-->
             <div class="content col-sm-6">
-                <img src="images/myphoto.png" class="mt-auto  img-fluid" alt="">
+                <img src="images/myphoto.png" class="w-100" alt="">
             </div>
-            <div class="content col-sm-6 d-flex flex-column justify-content-center">
+
+            <!--Container with Header text-->
+            <div class="content col-sm-6 d-flex flex-column justify-content-center align-items-center">
+
+                <!--Header caption-->
                 <h1 class="font-weight-bold">Я розробник, та креатор нових ідей</h1>
-                <p>В мене є досвід на рахунок ваших проектів. Унікальність мого підходу до кожного клієнта просто вражає. Спробуй прямо зараз.</p>
-                <button type="button" class="btn btn-info d-flex flex-row justify-content-center align-items-center">Info</button>
+                
+                <!--Header information text -->
+                <p class="text-justify">В мене є досвід на рахунок ваших проектів. Унікальність мого підходу до кожного клієнта просто вражає. Спробуй прямо зараз.</p>
+                
+                <!--Container with a buttons-->
+                <div class="btn-changes w-100 d-flex justify-content-center">
+
+                    <!--Button contact on screen large than ≥576px-->
+                    <button type="button" class="btn btn-info col-sm-5 d-none d-sm-block text-uppercase my-btn"> <a href="#yak-contact" class="badge my-link"> Зв'язатися</a></button>
+                    
+                    <!--Button contact on screen < 576px-->
+                    <button type="button" class="btn btn-info d-block w-100 d-block d-sm-none text-uppercase my-btn"><a href="#yak-contact" class="badge my-link"> Зв'язатися</a></button>
+
+                </div>
             </div>
         </div>
+    </section>
+    <!--Section about me-->
+    <section class="container about-me" id="yak-about-me">
+        <div class="row">
+            <div class="col-12 text-center d-flex justify-content-center ">
+                <h2 class="font-weight-bold text-uppercase mt-3 mb-auto">Про мене</h2>
+            </div>
+            <div class="col-12 col-sm-6 text-center d-block mx-auto my-3">
+                <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore porro quis nulla. Quo, facilis? Excepturi tenetur totam impedit iusto cupiditate? Tempora corporis voluptas a, sit quisquam ullam quo. Illo, iure!</span>
+            </div>
+            <div class="col-12  d-flex justify-content-center">
+                <img src="images/signature.png" alt="">
+            </div>
+        </div>  
+              
+        
+        
     </section>
 
     <!-- Optional JavaScript -->

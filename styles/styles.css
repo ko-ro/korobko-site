@@ -6,10 +6,38 @@
     font-weight: bold;
 }
 
+.bg-1{
+    background-color: #e9e9e9;
+}
+.navbar{
+    border-bottom: 1px solid black;
+}
 .main-info{
     margin-top: 96px;
-    background-color: #f8f9fb;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
 }
 .main-info p{
     color:#787878;
+}
+.my-link{
+    color:#f8faf9;
+}
+.my-btn{
+    background-color: #10c9c3;
+    border-color: #10c9c3;
+}
+.my-btn a:hover{
+    color:#f8faf9;
+}
+.btn-info:hover {
+    color: #fff;
+    background-color: #35fff8;
+    border-color: #35fff8;
+}
+.btn-info:not(:disabled):not(.disabled).active, .btn-info:not(:disabled):not(.disabled):active, .show>.btn-info.dropdown-toggle{
+    background-color: #35fff8;
+    border-color: #35fff8;
+    color:#f8faf9;
+
 }
