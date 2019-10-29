@@ -1,12 +1,18 @@
-var options = {
-    offset: 400
-  }
-var header = new Headhesive('.navbar-collapse', options);
-
-$('.nav-link').bind("click", function(e) {
-  var anchor = $(this);
-  $('html, body').stop().animate({
-    scrollTop: $(anchor.attr('href')).offset().top - 96
-  }, 1000);
-  e.preventDefault();
+ $(document).ready(function(){
+	$(".navbar").on("click","a", function (event) {
+		event.preventDefault();
+		var id  = $(this).attr('href'),
+    top = $(id).offset().top;
+    top -=96;
+		$('body,html').animate({scrollTop: top}, 1500);
+	});
+});
+$(document).ready(function(){
+	$(".btn-yak").on("click","a", function (event) {
+		event.preventDefault();
+		var id  = $(this).attr('href'),
+    top = $(id).offset().top;
+    top -=96;
+		$('body,html').animate({scrollTop: top}, 1500);
+	});
 });

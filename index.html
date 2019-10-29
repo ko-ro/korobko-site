@@ -16,7 +16,7 @@
   <body>
     <!--Header navigation bar-->
     <header>
-        <div class="container fixed-top bg-1">
+        <div class="container nav-container fixed-top bg-1">
             <nav class="navbar navbar-expand-lg navbar-light bg-1 ">
                 <!--Logo-->
                 <a class="navbar-brand" href="#yak-main-info">
@@ -39,7 +39,7 @@
                             <a class="nav-link" href="#yak-ps">Професійні навички</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#yak-scientific-work">Наукова Робот</a>
+                            <a class="nav-link" href="#yak-scientific-work">Наукова Робота</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#yak-project">Проекти</a>
@@ -76,10 +76,10 @@
                 <div class="btn-changes w-100 d-flex justify-content-center">
 
                     <!--Button contact on screen large than ≥576px-->
-                    <button type="button" class="btn btn-info col-sm-5 d-none d-sm-block text-uppercase my-btn"> <a href="#yak-contact" class="badge my-link"> Зв'язатися</a></button>
+                    <button type="button" class="btn btn-info col-sm-5 d-none d-sm-block text-uppercase my-btn btn-yak"> <a href="#yak-contact" class="badge my-link p-3">Зв'язатися</a></button>
                     
                     <!--Button contact on screen < 576px-->
-                    <button type="button" class="btn btn-info d-block w-100 d-block d-sm-none text-uppercase my-btn my-4"><a href="#yak-contact" class="badge my-link"> Зв'язатися</a></button>
+                    <button type="button" class="btn btn-info d-block w-100 d-block d-sm-none text-uppercase my-btn my-4 btn-yak"><a href="#yak-contact" class="badge my-link p-3">Зв'язатися</a></button>
 
                 </div>
             </div>
@@ -91,11 +91,11 @@
 
             <!--Title about me-->
             <div class="col-12 text-center d-flex justify-content-center my-5">
-                <h2 class="font-weight-bold text-uppercase mb-auto">Про мене</h2>
+                <h2 class="font-weight-bold text-uppercase">Про мене</h2>
             </div>
 
             <!--Text about me-->
-            <div class="col-12 col-sm-6 text-center d-block mx-auto my-3">
+            <div class="col-12 col-sm-6 text-center d-block mx-auto mb-3">
                 <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore porro quis nulla. Quo, facilis? Excepturi tenetur totam impedit iusto cupiditate? Tempora corporis voluptas a, sit quisquam ullam quo. Illo, iure!</span>
             </div>
             <!--Signature images-->
@@ -134,10 +134,10 @@
                 <div class="btn-changes w-100 d-flex justify-content-center">
 
                     <!--Button contact on screen large than ≥576px-->
-                    <button type="button" class="btn btn-info col-sm-auto d-none d-sm-block text-uppercase my-btn m-4"> <a href="#yak-contact" class="badge my-link px-4">Замовити</a></button>
+                    <button type="button" class="btn btn-info col-sm-auto d-none d-sm-block text-uppercase my-btn m-4 btn-yak"> <a href="#yak-contact" class="badge my-link p-3">Замовити</a></button>
                     
                     <!--Button contact on screen < 576px-->
-                    <button type="button" class="btn btn-info d-block w-100 d-block d-sm-none text-uppercase my-btn my-4"><a href="#yak-contact" class="badge my-link">Замовити</a></button>
+                    <button type="button" class="btn btn-info d-block w-100 d-block d-sm-none text-uppercase my-btn my-4 btn-yak"><a href="#yak-contact" class="badge my-link p-3">Замовити</a></button>
 
                 </div>
             </div>
@@ -145,6 +145,35 @@
             <!--Container with photo-->
             <div class="col-12 col-sm-6 mw-100 p-0">
                 <img src="images/PSImage.jpg" class="mw-100" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="container" id="yak-scientific-work">
+        <div class="row">
+            <!--Header text-->
+            <div class="col-12 text-center d-flex justify-content-center my-5">
+                <h2 class="font-weight-bold text-uppercase  mb-auto ">Професійні навички</h2>
+            </div>
+            <!--Main container-->
+            <div class="col-12">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet mollitia laboriosam consequatur aperiam quod dolorem velit voluptas sunt architecto aliquid magni quibusdam obcaecati, accusamus quisquam consectetur natus optio illum tempore.</p>
+            </div>
+            <div class="col-12">
+                <!--Container with a buttons-->
+                <div class="btn-changes w-100 d-flex justify-content-center">
+            
+                    <!--Button contact on screen large than ≥576px-->
+                    <button type="submit" class="btn btn-info col-sm-auto d-none d-sm-block text-uppercase my-btn my-4 btn-yak ">
+                        <a class="badge my-link p-3 d-flex align-items-center" style="font-weight : 20px" href="images/download-icon.png" download="" >Завантажити роботу <img src="images/download-icon.png" class="download-icon" alt=""></a> 
+                    </button>
+            
+                    <!--Button contact on screen < 576px-->
+                    <button type="submit" class="btn btn-info d-block w-100 d-block d-sm-none text-uppercase my-btn my-4 btn-yak ">
+                        <a class="p-3 m-0">Завантажити роботу </a> 
+                    </button>
+            
+                </div>
             </div>
         </div>
     </section>
@@ -169,13 +198,13 @@
                 <!--Slider Images-->
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                    <img src="images/img1.jpeg" class="d-block w-100">
+                    <img src="images/proj-1.png" class="d-block w-100">
                     </div>
                     <div class="carousel-item">
-                    <img src="images/img2.jpg" class="d-block w-100">
+                    <img src="images/proj-2.png" class="d-block w-100">
                     </div>
                     <div class="carousel-item">
-                    <img src="images/img3.jpg" class="d-block w-100">
+                    <img src="images/proj-3.png" class="d-block w-100">
                     </div>
                 </div>
                 <!--Slider buttons-->
@@ -192,17 +221,16 @@
 
     </section>
 
-       <!--Contact section-->
+    <!--Contact section-->
     <section class="container contact" id="yak-contact">
         <div class="row h-100  align-items-center bg-1">
-   
+            
+            <div class="col-12 text-center d-flex justify-content-center my-5">
+                <h2 class="font-weight-bold text-uppercase">Контактна інформація</h2>
+            </div>
             <!--Contact information text-->
             <div class="col-12 col-md-6">
-
-                <div class="contact-info m-xs-5">
-                    <h2 class="text-uppercase font-weight-bold text-center my-5">Контактна інформація</h2>
-                    <p>Ви можете звязатися із мною за контактами вказаними нижче</p>
-                </div>
+                <p>Ви можете звязатися із мною за контактами вказаними нижче</p>
 
                 <p><strong>Адреса : </strong>Відродження 26 <sup>б</sup></p>
                 <p><strong>Телефон : </strong>+380 (66) 715-44-72</p>
@@ -276,10 +304,10 @@
                         <div class="btn-changes w-100 d-flex justify-content-center">
             
                             <!--Button contact on screen large than ≥576px-->
-                            <button type="submit" class="btn btn-info col-sm-auto d-none d-sm-block text-uppercase my-btn m-4">Надіслати заявку</button>
+                            <button type="submit" class="btn btn-info col-sm-auto d-none d-sm-block text-uppercase my-btn m-4 btn-yak "><p class="p-3 m-0">Надіслати заявку</p> </button>
             
                             <!--Button contact on screen < 576px-->
-                            <button type="submit" class="btn btn-info d-block w-100 d-block d-sm-none text-uppercase my-btn m-4">Надіслати заявку</button>
+                            <button type="submit" class="btn btn-info d-block w-100 d-block d-sm-none text-uppercase my-btn m-4 btn-yak "><p class="p-3 m-0">Надіслати заявку</p> </button>
             
                         </div>
                     </div>
@@ -287,6 +315,7 @@
           </div>
         </div>
     </section>
+    <!--Footer container-->
     <footer class="container bg-footer">
         <div class="row">
             <div class="col-12 text-center my-3">
@@ -298,10 +327,12 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!--Slow scroll script-->
     <script src="script/ScrollScript.js"></script>
+    <!--Form validator script-->
     <script src="script/ValidFormCheck.js"></script>
 </body>
 </html>
